@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Buy Buddy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+In today's fast-paced digital marketplace, customers are often overwhelmed by the challenges of finding the best products online. The process is hindered by time-consuming searches, information overload, inconsistent data, and a lack of centralized comparison options. These issues can lead to decision fatigue, making it difficult for customers to choose the right products, ultimately resulting in dissatisfaction and wasted time.
 
-In the project directory, you can run:
+To address these challenges, "Buy Buddy" has been developed as a powerful browser extension designed to streamline the online shopping experience. By leveraging advanced algorithms and AI, Buy Buddy makes product searches faster and more efficient, providing customers with a comprehensive summary of the best products based on their preferences.
 
-### `npm start`
+### Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Product Search and Summary
+   Users can search for products across multiple online stores. The extension collects details like features, prices, and reviews, and provides a summary with multiple suggestions for easy comparison.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Price Tracking
+   Users can track product prices over time. The extension alerts them to significant price drops, allowing them to purchase at the best price possible.
 
-### `npm test`
+3. YouTube Video Analysis and Summary
+   Buy Buddy analyzes YouTube reviews of selected products and provides concise summaries, offering users additional insights from video reviews.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Personalized Recommendations with Media Analysis
+   The extension provides personalized product recommendations by analyzing pictures and videos to understand user preferences, suggesting products that are likely to appeal to them.
 
-### `npm run build`
+5. Return Policy Verification
+   This feature verifies if products can be opened and inspected upon delivery, enabling prompt returns for unsatisfactory items and offering reassurance to online shoppers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Interactive Questionnaire
+   Buy Buddy asks users targeted questions to better understand their needs, which helps in providing more accurate and relevant product suggestions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instructions to RUN
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the GitHub Repository
 
-### `npm run eject`
+Begin by cloning the repository from GitHub:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`git clone https://github.com/Developer-Student-Clubs-MMDU/BuyBuddy`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This repository contains a React app and a directory named `model`. The `model` folder includes some local datasets and Python scripts to connect to the LLM (Large Language Model).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Running the Model
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the model, follow these steps:
 
-## Learn More
+    1. Navigate into the BUYBUDDY/model folder:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd BUYBUDDY/model
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    2. Run the Python script:
 
-### Code Splitting
+    `py model.py`
+    This command will start the model.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Running the React App
 
-### Analyzing the Bundle Size
+To start the React app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Open another terminal and navigate to the `BUYBUDDY` directory:
 
-### Making a Progressive Web App
+   `cd BUYBUDDY`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Start the React app
 
-### Advanced Configuration
+   `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   This will launch the React app on your local host.
