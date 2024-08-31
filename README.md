@@ -53,6 +53,10 @@ To start the model, follow these steps:
 
 ### 3. Running the React App
 
+To install all the dependencies run:
+
+`npm install`
+
 To start the React app:
 
 1. Open another terminal and navigate to the `BUYBUDDY` directory:
